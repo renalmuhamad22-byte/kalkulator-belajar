@@ -1,0 +1,73 @@
+/* untuk edit tampilan dasar */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+/* buat edit bodi kalkulator */
+.calculator {
+  width: 250px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px (rgb(0 0 0 1));
+  padding: 20px;
+}
+
+/* buat edit tampilan kalkulator */
+#display {
+  width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+  text-size-adjust: 24px;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+  /* buat edit susunan tombol */
+  .button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  /* buat edit tampilan tombol */
+  .btn {
+    padding: 15px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: royalblue;
+    cursor: pointer;
+    transition: b;
+  }
+
+  .btn:active {
+    background-color: white;
+  }
+
+  .operator {
+    background-color: red;
+  }
+
+  .operator:active {
+    background-color: orange;
+  }
+  .clear {
+    grid-column: span;
+    background-color: red;
+    color: white;
+    width: 100px;
+  }
+
+  .clear:active {
+    background-color: orange;
+  }
+}
